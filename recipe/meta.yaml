@@ -1,4 +1,4 @@
-{% set version = '2.8.6' %}
+{% set version = "2.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/s2dverification_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/s2dverification/s2dverification_{{ version }}.tar.gz
-  sha256: 34f63f324110319a808ad139e19191b714584f9319cd7dc2b62ce376eb6075db
+  sha256: 166678ea5b37f72c79cfb036fd0603f10205ee9b311460b6a85cb7342892d64f
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -56,15 +56,11 @@ test:
 about:
   home: https://earth.bsc.es/gitlab/es/s2dverification/wikis/home
   license: LGPL-3.0-only
-  summary: Set of tools to verify forecasts through the computation of typical prediction scores
-    against one or more observational datasets or reanalyses (a reanalysis being a physical
-    extrapolation of observations that relies on the equations from a model, not a pure
-    observational dataset). Intended for seasonal to decadal climate forecasts although
-    can be useful to verify other kinds of forecasts. The package can be helpful in
-    climate sciences for other purposes than forecasting.
+  summary: Set of tools to verify forecasts through the computation of typical prediction scores against one or more observational datasets or reanalyses (a reanalysis being a physical extrapolation of observations that relies on the equations from a model, not a pure observational dataset). Intended for seasonal to decadal
+    climate forecasts although can be useful to verify other kinds of forecasts. The package can be helpful in climate sciences for other purposes than forecasting.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:

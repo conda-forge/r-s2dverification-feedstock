@@ -5,11 +5,9 @@ Home: https://earth.bsc.es/gitlab/es/s2dverification/wikis/home
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-s2dverification-feedstock/blob/master/LICENSE.txt)
 
 Summary: Set of tools to verify forecasts through the computation of typical prediction scores against one or more observational datasets or reanalyses (a reanalysis being a physical extrapolation of observations that relies on the equations from a model, not a pure observational dataset). Intended for seasonal to decadal climate forecasts although can be useful to verify other kinds of forecasts. The package can be helpful in climate sciences for other purposes than forecasting.
-
-
 
 Current build status
 ====================
