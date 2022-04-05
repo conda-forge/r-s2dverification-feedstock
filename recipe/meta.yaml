@@ -1,4 +1,4 @@
-{% set version = "2.10.1" %}
+{% set version = "2.10.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/s2dverification_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/s2dverification/s2dverification_{{ version }}.tar.gz
-  sha256: ef0eb7f73f8694b4dd12440b9c5635c5c56b318ed08c24839a6da84680fd5e1b
+  sha256: 47ee686bb3e7a907b3c9c0f12ee315e370fb39c37e927d36384545dfb3eb220a
 
 build:
   merge_build_host: true  # [win]
