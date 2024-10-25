@@ -1,6 +1,5 @@
 {% set version = "2.10.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-s2dverification
@@ -13,8 +12,7 @@ source:
   sha256: c4198bcfdac7541d4a1b1b761167cd45a30838755a19dfd5c2ec5488f8e1f883
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
